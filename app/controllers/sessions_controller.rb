@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by(id: params[:session][:user_id])
     if @user
-      redirect_to users_show_path(@user.id)
+      redirect_to user_path(@user.id)
       login(@user.id)
     else
       flash.now[:message] =  'Incorrect'
