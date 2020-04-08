@@ -7,6 +7,7 @@ In this applicaiton users can attend to multiples events and an event can be att
 - Ruby > 2.5
 - Ruby on Rails > 5.2
 - Rubocop
+- Bcrypt
 
 ## Built With
 
