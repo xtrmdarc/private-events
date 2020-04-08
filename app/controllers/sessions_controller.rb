@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to user_path(@user.id)
       login(@user.id)
     else
-      flash.now[:message] =  'Incorrect'
+      flash.now[:message] = 'Incorrect'
       render 'new'
     end
   end

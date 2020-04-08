@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(name: params[:user][:name],email: params[:user][:email],password: params[:user][:password],password_confirmation: params[:user][:password_confirmation])
+    @user = User.new(name: params[:user][:name], email: params[:user][:email],
+                     password: params[:user][:password], password_confirmation: params[:user][:password_confirmation])
     if @user.save
       redirect_to user_path(@user)
       login(@user.id)

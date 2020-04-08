@@ -11,10 +11,10 @@ class EventsController < ApplicationController
     @event.location = params[:event][:location]
 
     if @event.save
-      flash[:message]  = 'New event created'
+      flash[:message] = 'New event created'
       redirect_to event_path(@event)
     else
-      flash.now[:message]  = 'Something went wrong'
+      flash.now[:message] = 'Something went wrong'
       render 'new'
     end
   end
