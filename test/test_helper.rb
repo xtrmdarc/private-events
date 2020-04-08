@@ -13,7 +13,6 @@ class ActiveSupport::TestCase
 end
 
 class ActionDispatch::IntegrationTest
-
   # Log in as a particular user.
   def log_in_as(user)
     post login_path, params: { session: { user_id: user.id } }
