@@ -1,6 +1,6 @@
 # Member's Only
 
-In this applicaiton only signed in users are able to see who wrote the post. This is a ruby on rails based application where we developed our own sessions system in order to login, logout, remember and filter specific content by middleware.
+In this applicaiton users can attend to multiples events and an event can be attended by multiple atendees. We've created a sessions systems to back up our login and signup features. This is a ruby on rails based application where we developed our own associations relationships.
 
 # Requirements
 
